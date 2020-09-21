@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+main .hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  width: 100%;
+  overflow: hidden;
+}
+
+main .hero .col {
+  min-height: 80vh;
+  margin-bottom: auto;
+}
+
+main .hero .col-l {
+  position: relative;
+}
+
+main .hero .col-l .big-text {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+main .hero .col-l .big-text span {
+  display: block;
+}
+
+main .hero .col-r {
+  background: url(../../img/humphrey-muleba-tfHVGjBSGZU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .welcome-msg {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  color: #b5e1ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+main .welcome-msg .welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .welcome-msg .welcome-text h1 {
+  font-size: 7rem;
+}
+
+main .welcome-msg .welcome-text h1 span {
+  display: block;
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #363636;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.hide {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+#arts-showcase {
+  margin: 5rem 0;
+}
+
+#arts-showcase .art-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#arts-showcase .art-wrap .art-content {
+  position: relative;
+  min-height: 80vh;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+#arts-showcase .art-wrap .art-content .logo {
+  background: url(../../img/roman-mager-lim7hx-aT0E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 60%;
+  width: 50%;
+  height: 100%;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#arts-showcase .art-wrap .art-content .info {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background: #fff;
+}
+
+#arts-showcase .art-wrap .art-content .info .title {
+  font-weight: 500;
+}
+
+#arts-showcase .art-wrap .art-content .info p {
+  margin: 3px 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+#arts-showcase .art-wrap .art-content .info p span {
+  text-decoration: underline;
+  color: #be5858;
+  cursor: pointer;
+}
+
+#arts-showcase .art-wrap .art-content .info .btn {
+  display: inline-block;
+  width: 150px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+#arts-showcase .art-wrap .art-content .logo-reverse {
+  background: url(../../img/pascal-van-de-vendel-gaYtQigL_ek-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  left: 60%;
+  width: 50%;
+  height: 100%;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+@media only screen and (max-width: 600px) {
+  main .hero .col-l .big-text {
+    font-size: 4rem;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+  main .welcome-msg .welcome-text h1 {
+    font-size: 4rem;
+  }
+  #arts-showcase .art-wrap .art-content .logo {
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  #arts-showcase .art-wrap .art-content .info {
+    width: 350px;
+  }
+  #arts-showcase .art-wrap .art-content .logo-reverse {
+    left: 0%;
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  main .hero .col-l .big-text {
+    font-size: 3rem;
+  }
+  main .container {
+    margin: auto 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

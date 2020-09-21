@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+
+@import "main";
+@import "arts-showcase";
+
+@media only screen and (max-width: 600px) {
+	main {
+		.hero {
+			.col-l {
+				.big-text {
+					font-size: 4rem;
+					transform: translateY(-30%);
+				}
+			}
+		}
+		.welcome-msg {
+			.welcome-text {
+				h1 {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
+	#arts-showcase {
+		.art-wrap {
+			.art-content {
+				.logo {
+					right: 0%;
+					bottom: 0%;
+					width: 100%;
+					height: 100%;
+					background-size: cover;
+				}
+				.info {
+					width: 350px;
+				}
+
+				.logo-reverse {
+					left: 0%;
+					width: 100%;
+
+					transform: translateX(0%);
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 350px) {
+	main {
+		.hero {
+			.col-l {
+				.big-text {
+					font-size: 3rem;
+				}
+			}
+		}
+		.container {
+			margin: auto 0;
+		}
+	}
+}
